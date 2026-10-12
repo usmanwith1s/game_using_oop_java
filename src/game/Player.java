@@ -21,6 +21,10 @@ public class Player {
                 + weapon.getName() + "!");
     }
 
+public boolean isAlive() {
+    return health > 0;
+}
+
     public void takeDamage(int damage) {
         health -= damage;
 
