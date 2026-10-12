@@ -13,6 +13,10 @@ public class Enemy {
         this.weapon = weapon;
     }
 
+public boolean isAlive() {
+    return health > 0;
+}
+
     public void attack(Player player) {
         player.takeDamage(weapon.getDamage());
 
